@@ -1,5 +1,5 @@
+const urljoin = require("url-join")
 const path = require(`path`)
-
 const config = require(`./src/utils/siteConfig`)
 const generateRSSFeed = require(`./src/utils/rss/generate-feed`)
 
@@ -31,9 +31,82 @@ try {
 */
 module.exports = {
     siteMetadata: {
-        siteUrl: config.siteUrl,
+        title: config.title,
+        author: config.author,
+        description: config.description,
+        siteUrl: config.url,
+        social: {
+          twitter: config.twitter,
+        },
     },
     plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1360,
+              withWebp: true,
+              showCaptions: true,
+              quality: 75,
+              wrapperStyle: `margin: 7vw 0;`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
+    },
+    'gatsby-transformer-json',
+    'gatsby-plugin-netlify-cms',
+    `gatsby-plugin-postcss`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        tailwind: true, // Enable tailwindcss support
+            develop: true, // Enable while using `gatsby develop`
+            // tailwind: true, // Enable tailwindcss support
+            // whitelist: ['whitelist'], // Don't remove this selector
+          },
+        },
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-catch-links`,
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-force-trailing-slashes`,
+        `gatsby-plugin-offline`,
         /**
          *  Content Plugins
          */
@@ -53,8 +126,6 @@ module.exports = {
                 name: `images`,
             },
         },
-        `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-source-ghost`,
             options:
@@ -65,16 +136,18 @@ module.exports = {
         /**
          *  Utility Plugins
          */
-        {
-            resolve: `gatsby-plugin-ghost-manifest`,
-            options: {
-                short_name: config.shortTitle,
-                start_url: `/`,
-                background_color: config.backgroundColor,
-                theme_color: config.themeColor,
-                display: `minimal-ui`,
-                icon: `static/${config.siteIcon}`,
-                legacy: true,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `DanielC.us site`,
+        short_name: `DanielC.us`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        icon: `daniel-byKiko-sm.png`, // This path is relative to the root of the site.
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: `minimal-ui`,
+        legacy: true,
                 query: `
                 {
                     allGhostSettings {
@@ -179,9 +252,33 @@ module.exports = {
                 addUncaughtPages: true,
             },
         },
-        `gatsby-plugin-catch-links`,
-        `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-force-trailing-slashes`,
-        `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1360,
+              withWebp: true,
+              showCaptions: true,
+              quality: 75,
+              wrapperStyle: `margin: 7vw 0;`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        {
+          resolve: `gatsby-plugin-google-analytics`,
+          options: {
+            trackingId: ``,
+          },
+        },
     ],
 }

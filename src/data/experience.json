@@ -1,0 +1,590 @@
+{
+  "experience": [
+    {
+      "role": "Brand Ambassador",
+      "company": "CES Pepcom",
+      "description": "Pepcom is a party for media at CES, Las Vegas",
+      "end": "1/2020"
+    },
+    {
+      "role": "Educator",
+      "company": "Summerlin Library",
+      "description": "Presented the 2nd Tea.101 at Summerlin Library, Las Vegas.",
+      "end": "12/2019"
+    },
+    {
+      "role": "Electronics Maintenance",
+      "company": "Symmetry Labs",
+      "description": "Work on the tree outside of the Absinthe tent at Caesar's Palace, Las Vegas.",
+      "end": "12/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "Forte Tapas",
+      "description": "Graduation party for the graduation of Hunter Ferrari, Las Vegas.",
+      "end": "12/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Harney and Sons",
+      "description": "Representing Harney and Sons for a class on Cheese and Tea at Valley Cheese and Wine, Las Vegas.",
+      "end": "11/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Summerlin Library",
+      "description": "Represented Harney and Sons at the Fall Festival, Las Vegas.",
+      "end": "11/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Harney and Sons",
+      "description": "8th International Tea Festival, San Francisco",
+      "end": "/2019"
+    },
+    {
+      "role": "Educator",
+      "company": "Tea.Institute",
+      "description": "Presented the first Tea.101 at the Summerlin Library, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Beverage Sampling",
+      "company": "Coca-cola",
+      "description": "Elton John Yellow Brick Road, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Ace Staffing",
+      "description": "Ensure a pleasent experience for guests, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "AT&T",
+      "description": "Mang0 Meet and Greet, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Evo Championship",
+      "description": "Ensure a pleasent experience for guests, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "Rachel Clark Events",
+      "description": "Photograph setup, decore, and main event, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "AT&T",
+      "description": "Help guests with enteractive VR experience at the WNBA Allstar Game, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "Hachi Japanese Yakitori Izakaya",
+      "description": "Photograph beverages for online and print marketing, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "The Golden Tiki’s 4th Anniversary",
+      "description": "Photograph the Golden Tiki’s 4th Anniversary party, Las Vegas; ",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Microsoft",
+      "description": "Microsoft Inspire 2019, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "The Cosmopolitan",
+      "description": "Chef John Courtney, '' , Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Workday",
+      "description": "Workday Altitude 2019, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "Las Vegas Review Journal",
+      "description": "Photography published in 'Las Vegas Review Journal' (+)",
+      "link": "https://www.reviewjournal.com/entertainment/food/vegas-unstripped-is-local-chefs-answer-to-star-studded-strip-event-1663447/",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "DAVID Magazine",
+      "description": "Photography published in 'DAVID Magazine' (+)",
+      "link": "https://davidlv.com/",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "Vegas Magazine",
+      "description": "Photography published in 'Vegas Magazine' (+)",
+      "link":"https://vegasmagazine.com",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "SENSI Magazine",
+      "description": "Photography published in 'SENSI Magazine' (+)",
+      "link":"https://www.sensimag.com/",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "The Las Vegas Food and Beverage Professional",
+      "description": "Photography published in 'The Las Vegas Food and Beverage Professional' (+)",
+      "link":"https://lvfnb.com/articles/dishing-it-with-sk-delph-e6b2834229de",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Bitchin’ Sauce",
+      "description": "Product sampling for Bitchin’ Sauce, Henderson ",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "Breakthru Beverage",
+      "description": "Breakthru Beverage No Kid Hungry Charity Event, Las Vegas  (+)",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "World Tea Expo",
+      "description": "Serving tea and Business to Business sales at the World Tea Expo, Las Vegas",
+      "link":"",
+      "end": "/2019"
+    },
+    {
+      "role": "Tour Guide",
+      "company": "Amway",
+      "description": "Tours to the Grand Canyon for Amway “A60”, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "VR Demonstrations",
+      "company": "Dell",
+      "description": "Dell Technologies World, Las Vegas",
+      "link":"",
+      "end": "/2019"
+    },
+    {
+      "role": "Phtotographer",
+      "company": "Vegas Unstripped",
+      "description": "2nd Annual Vegas Unstripped, Las Vegas ",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "Aurora Events",
+      "description": "Photograph the event and staff engaging with guests, Las Vegas",
+      "link":"",
+      "end": "/2019"
+    },
+    {
+      "role": "",
+      "company": "Los Angeles Times",
+      "description": "Photography published in 'Los Angeles Times' (+)",
+      "link":"https://www.latimes.com/travel/lasvegas/la-tr-vegas-unstripped-chefs-date-announced-20190320-story.html",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Whiskey in the Wilderness",
+      "description": "Beverage sampling at the 3rd Annual Whiskey in the Wilderness, Las Vegas",
+      "link":"",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer",
+      "company": "Body Shrine",
+      "description": "Photograph classes at Body Shrine, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "Michael Jones",
+      "description": "Michael Jones, '' .Washington, DC",
+      "link":"",
+      "end": "/2019"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "CES Pepcom",
+      "description": "CES Pepcom, Las Vegas",
+      "end": "/2019"
+    },
+    {
+      "role": "Wine Staff",
+      "company": "Keep Memory Alive",
+      "description": "Keep Memory Alive’s 23rd Annual “Power of Love Gala”, Las Vegas",
+      "link":"",
+      "end": "/2019"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "The Swing It Girls",
+      "description": "Photograph dress rehersal for The Swing It Girls, Las Vegas",
+      "end": "/2018"
+    },
+    {
+      "role": "Phtotographer",
+      "company": "Vegas Unstripped",
+      "description": "1st Annual Vegas Unstripped, Las Vegas",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Whiskey in the Wilderness",
+      "description": "Beverage sampling at the 2nd Annual Whiskey in the Wilderness",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "Harney and Sons",
+      "description": "Harney and Sons",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "7th International Tea Festival",
+      "description": "7th International Tea Festival, San Francisco",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer",
+      "company": "Toddy Shop",
+      "description": "Toddy Shop, Las Vegas",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Photography",
+      "company": "Gobble Gobble Give",
+      "description": "Annual Gobble Gobble Give, Las Vegas",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer",
+      "company": "Baobab Cafe",
+      "description": "Baobab Cafe, Las Vegas",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "Ken Convey",
+      "description": "Ken Convey, ' ', Las Vegas",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer",
+      "company": "Life is Beautiful",
+      "description": "Life is Beautiful, Las Vegas",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer",
+      "company": "Kaiseki Yuzu",
+      "description": "Kaiseki Yuzu, Las Vegas",
+      "end": "/2018"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "Velveteen Rabbit",
+      "description": "Beverage sampling at the Velveteen Rabbit, Las Vegas",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer",
+      "company": "Yoga Haven",
+      "description": "Yoga Haven, Las Vegas",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer",
+      "company": "Rooster Boy Cafe",
+      "description": "Rooster Boy Cafe, Las Vegas",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer",
+      "company": "New Vista",
+      "description": "New Vista, Las Vegas",
+      "end": "/2018"
+    },
+    {
+      "role": "Event Space Management",
+      "company": "Sound Meditation Presents",
+      "description": "Sound Meditation Presents, San Francisco",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Vending",
+      "company": "Grace Cathedral",
+      "description": "Grace Cathedral, San Francisco",
+      "end": "/2018"
+    },
+    {
+      "role": "Tea Service",
+      "company": "Gabriel Gold Music",
+      "description": "Gabriel Gold Music, San Francisco",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Photographer",
+      "company": "Hopped Taco Throwdown",
+      "description": "Hopped Taco Throwdown, Las Vegas",
+      "end": "/2018"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "World Tea Expo",
+      "description": "World Tea Expo, Las Vegas",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "CES Pepcom",
+      "description": "CES Pepcom, Las Vegas",
+      "end": "/2018"
+    },
+    {
+      "role": "Wine Staff",
+      "company": "Keep Memory Alive",
+      "description": "Keep Memory Alive’s 22nd Annual “Power of Love Gala”, Las Vegas",
+      "link":"",
+      "end": "/2018"
+    },
+    {
+      "role": "Photography (+)",
+      "company": "SFVR, San Francisco",
+      "description": "SFVR, '' ,San Francisco",
+      "end": "/2017"
+    },
+    {
+      "role": "Brand Ambassador",
+      "company": "6th International Tea Festival",
+      "description": "6th International Tea Festival, San Francisco",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Event Space Management",
+      "company": "New Moon Festival, Yosemite",
+      "description": "New Moon Festival, Yosemite",
+      "end": "/2017"
+    },
+    {
+      "role": "Wine Staff",
+      "company": "Keep Memory Alive",
+      "description": "Keep Memory Alive’s 21st Annual 'Power of Love Gala'",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Photography (+)",
+      "company": "David Veliz",
+      "description": "David Veliz’s “Fading Shadows”, Las Vegas",
+      "end": "/2017"
+    },
+    {
+      "role": "Photography",
+      "company": "Gobble Gobble Give",
+      "description": "Annual Gobble Gobble Give, Las Vegas",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Event Space Management",
+      "company": "Convent Arts Collective",
+      "description": "Convent Arts Collective Annual Halloween, San Francisco",
+      "end": "/2017"
+    },
+    {
+      "role": "Beverage Sampling",
+      "company": "Mission Cliffs",
+      "description": "Mission Cliffs, San Francisco",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Immodestea (+)",
+      "company": "Rafal Piersiak",
+      "description": "Rafal Piersiak, '' ,San Francisco",
+      "end": "/2017"
+    },
+    {
+      "role": "Beverage Sampling",
+      "company": "Yelp",
+      "description": "Yelp, San Francisco",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Immodestea (+)",
+      "company": "Jackson Walker",
+      "description": "Jackson Walker, '' ,San Francisco",
+      "end": "/2017"
+    },
+    {
+      "role": "Event Space Management (+)",
+      "company": "Designers + Geeks",
+      "description": "Designers + Geeks, San Francisco",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Photographer (+)",
+      "company": "Pretty Good Presents",
+      "description": "Pretty Good Presents, '' ,San Francisco",
+      "end": "/2017"
+    },
+    {
+      "role": "Event Space Management",
+      "company": "The Place",
+      "description": "The Place, San Francisco",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Event Space Management",
+      "company": "Toto Washlet",
+      "description": "Toto Washlet, San Francisco",
+      "end": "/2017"
+    },
+    {
+      "role": "Event Space Management",
+      "company": "IDEATE",
+      "description": "IDEATE, San Francisco",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Photographer",
+      "company": "",
+      "description": "Sold my first Fine Art Photography (+)",
+      "end": "/2017"
+    },
+    {
+      "role": "Theme Camp Management",
+      "company": "Guanyin Teahouse",
+      "description": "Enchanted Forest, Guanyin Teahouse, California",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Educational Tea Service",
+      "company": "Summerlin Library",
+      "description": "Summerlin Library, San Francisco",
+      "end": "/2017"
+    },
+    {
+      "role": "Educational Tea Service",
+      "company": "Charleston Library",
+      "description": "Charleston Library, San Francisco",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "Theme Camp Management",
+      "company": "Immodestea",
+      "description": "Symbiosis Eclipse, Om Shan Tea, Oregon",
+      "end": "/2017"
+    },
+    {
+      "role": "Vending",
+      "company": "Immodestea",
+      "description": "Lightning in a Bottle, California",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "link":"",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "end": "/2017"
+    },
+    {
+      "role": "",
+      "company": "",
+      "description": "",
+      "link":"",
+      "end": "/2017"
+    }
+  ]
+}
+

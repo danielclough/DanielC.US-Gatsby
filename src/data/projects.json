@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "name": "DanielC.us",
+      "company": "Photography, Web Development, Beverage Specialist",
+      "description": "I am perfect for the job.",
+      "link": "https://danielc.us"
+    },
+    {
+      "role": "Photographer",
+      "company": "Daniel Clough Photography",
+      "description": "Event Photography, Food Photography, Brand Development.",
+      "start": "08/2018",
+      "end": ""
+    },
+    {
+      "role": "Full Stack Tech Lead",
+      "company": "Tea.Institute",
+      "description": "An tea project focused on education and consumer saftey.",
+      "start": "11/2018",
+      "end": ""
+    },
+    {
+      "role": "Tea Master",
+      "company": "Immodestea",
+      "description": "Events and education.",
+      "start": "04/2018",
+      "end": ""
+    },
+    {
+      "role": "Developer",
+      "company": "BlackcoinNL",
+      "description": "Build and maintain website and community bots.",
+      "start": "10/2017",
+      "end": ""
+    }
+  ]
+}

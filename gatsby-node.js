@@ -2,13 +2,15 @@ const path = require(`path`)
 const { postsPerPage } = require(`./src/utils/siteConfig`)
 const { paginate } = require(`gatsby-awesome-pagination`)
 
+const _ = require("lodash");
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
 /**
  * Here is the place where Gatsby creates the URLs for all the
  * posts, tags, pages and authors that we fetched from the Ghost site.
  */
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
-
     const result = await graphql(`
         {
             allGhostPost(sort: { order: ASC, fields: published_at }) {
@@ -199,4 +201,87 @@ exports.createPages = async ({ graphql, actions }) => {
             }
         },
     })
+
+  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const tagPage = path.resolve(`./src/templates/tag-page.js`)
+  
+  return graphql(
+    `
+      {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                tags
+              }
+            }
+          }
+        }
+      }
+    `
+  ).then(result => {
+    if (result.errors) {
+      throw result.errors
+    }
+
+    // Create blog posts pages.
+    const postsRemark = result.data.allMarkdownRemark.edges
+    const tagSet = new Set();
+
+    postsRemark.forEach((postRemark, index) => {
+      const previous = index === postsRemark.length - 1 ? null : postsRemark[index + 1].node
+      const next = index === 0 ? null : postsRemark[index - 1].node
+
+      // Get tags for tags pages.
+      if (postRemark.node.frontmatter.tags) {
+        postRemark.node.frontmatter.tags.forEach(tag => {
+          tagSet.add(tag);
+        });
+      }
+
+      createPage({
+        path: postRemark.node.fields.slug,
+        component: blogPost,
+        context: {
+          slug: postRemark.node.fields.slug,
+          previous,
+          next,
+        },
+      })
+    })
+
+    // Create tags pages.
+    tagSet.forEach(tag => {
+      createPage({
+        path: `/tags/${_.kebabCase(tag)}/`,
+        component: tagPage,
+        context: {
+          tag
+        }
+      });
+    });
+
+
+    return null
+  })
+}
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
 }

@@ -1,0 +1,154 @@
+{
+  "role": "Mastermind",
+  "fullname": "Daniel Clough",
+  "summary": "I'm awesome.",
+  "contact": {
+    "phone": "(530) 362-8437",
+    "email": "danielclough@gmail.com",
+    "website": "https://danielc.us",
+    "location": "Las Vegas, USA"
+  },
+  "skills": [
+    {
+      "title": "General",
+      "type": "percent",
+      "subskills": [
+        {
+          "name": "Event Planning",
+          "percent": 90
+        },
+        {
+          "name": "Photography",
+          "percent": 89
+        },
+        {
+          "name": "B2B Sales",
+          "percent": 82
+        },
+        {
+          "name": "Web Development",
+          "percent": 75
+        },
+        {
+          "name": "Tea Service",
+          "percent": 99
+        },
+        {
+          "name": "Translation",
+          "percent": 50
+        },
+        {
+          "name": "Presentations",
+          "percent": 75
+        }
+      ]
+    },
+    {
+      "title": "Languages",
+      "type": "percent",
+      "subskills": [
+        {
+          "name": "English",
+          "percent": 100
+        },
+        {
+          "name": "Mandarin",
+          "percent": 42
+        },
+        {
+          "name": "HTML/CSS",
+          "percent": 90
+        },
+        {
+          "name": "Javascript",
+          "percent": 50
+        }
+      ]
+    },
+    {
+      "title": "Frameworks",
+      "type": "tag",
+      "subskills": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Node"
+        },
+        {
+          "name": "Gatsby"
+        },
+        {
+          "name": "Ghost"
+        },
+        {
+          "name": "Jekyll"
+        },
+        {
+          "name": "Shopify"
+        },
+        {
+          "name": "Wordpress"
+        },
+        {
+          "name": "Wix"
+        }
+      ]
+    },
+    {
+      "title": "Software",
+      "type": "tag",
+      "subskills": [
+        {
+          "name": "Lightroom"
+        },
+        {
+          "name": "Photoshop"
+        },
+        {
+          "name": "Gimp"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "International Training Massage, Thailand",
+      "degree": "Certified Advanced Teacher Training",
+      "start": "2013",
+      "end": "2006"
+    },
+    {
+      "institution": "Himalayan Institute, USA",
+      "degree": "Yoga Initiate",
+      "start": "2002",
+      "end": "2006"
+    }
+  ],
+  "social": [
+    {
+      "service": "youtube",
+      "url": "https://www.youtube.com/danielclough"
+    },
+    {
+      "service": "linkedin",
+      "url": "https://www.linkedin.com/in/danielclough"
+    },
+    {
+      "service": "twitter",
+      "url": "https://twitter.com/tradingtea"
+    },
+    {
+      "service": "facebook",
+      "url": "https://www.facebook.com/danielcloughphotography"
+    },
+    {
+      "service": "instagram",
+      "url": "https://www.instagram.com/danielcloughphotography"
+    },
+    {
+      "service": "github",
+      "url": "https://github.com/danielclough"
+    }
+  ]
+}
