@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Bio from "../components/bio"
 import PostCard from "../components/postCard"
+import '../assets/css/main.css';
 
 // import "../utils/global.scss"
 import "../utils/normalize.css"

@@ -3,6 +3,8 @@ import _ from "lodash";
 import { Link } from "gatsby";
 import { graphql, StaticQuery } from "gatsby"
 
+import '../assets/css/main.css';
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -22,6 +24,7 @@ const TagIndex = ({ data }) => {
       <header className="tag-page-head">
           <h1 className="page-head-title">Tags({tags.length})</h1>
       </header>
+    <article className="post-content">
       <div className="tag-container">
         {tags.map( tag => {
           return(
@@ -35,6 +38,7 @@ const TagIndex = ({ data }) => {
             )
           })}
         </div>
+    </article>
     </Layout>
   )
 }

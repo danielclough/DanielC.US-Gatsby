@@ -62,12 +62,13 @@ return (
         </Link>
     </div>
       <div>
-        <div className="flex">
+        <div className="flex dropdown-menu">
           <div className="dropdown">  
             <button className="dropbtn"><h4> Photography <FontAwesomeIcon icon={faCaretDown} /></h4></button>
             <ul className="dropdown-content" id="photo">
-              <li> <a href="https://photography.DanielC.us"><FontAwesomeIcon icon={faCamera} /> Gallery </a></li>
+              <li> <a href="/gallery"><FontAwesomeIcon icon={faCamera} /> Gallery </a></li>
               <li> <a href="/contact"><FontAwesomeIcon icon={faEnvelope} /> Email </a></li>
+              <li> <a href="/daniel-clough-photography"><FontAwesomeIcon icon={faIdCard} /> About </a></li>
               <li><a href="https://facebook.com/danielcloughphotography"> <FontAwesomeIcon icon={faFacebook} /> Facebook </a></li>
               <li><a href="https://instagram.com/DanielCloughPhotography"> <FontAwesomeIcon icon={faInstagram} /> Instagram </a></li>
             </ul>
@@ -79,7 +80,6 @@ return (
               <li> <a href="https://Tea.Institute"><FontAwesomeIcon icon={faLeaf} /> Tea.Institute </a></li>
               <li> <a href="https://Immodestesa.com"><FontAwesomeIcon icon={faLeaf} /> Immodestesa </a></li>
               <li> <a href="https://Kombucha.Training"><FontAwesomeIcon icon={faLeaf} /> Kombucha.Training </a></li>
-              <li><a href="https://twitter.com/tradingtea"> <FontAwesomeIcon icon={faTwitter} /> Twitter </a></li>
             </ul>
           </div>
 
@@ -93,14 +93,13 @@ return (
             </ul>
           </div>
         </div>
-
           <div className="main-list">
             <ul>
               <li> <a href="/"><FontAwesomeIcon icon={faHome} /> Home </a></li>
-              <li> <a href="/about"><FontAwesomeIcon icon={faUser} /> About Me </a></li>
-              <li> <a href="/resume"><FontAwesomeIcon icon={faIdCard} /> Résumé </a></li>
+              <li> <a href="/"><FontAwesomeIcon icon={faIdCard} /> Résumé </a></li>
               <li><a href="/copyright"> <FontAwesomeIcon icon={faCreativeCommons} /> Creative Commons </a></li>
               <li> <a href="/payment"><FontAwesomeIcon icon={faBitcoin} />  <FontAwesomeIcon icon={faPaypal} /> Pay Me <FontAwesomeIcon icon={faDollarSign} /> <FontAwesomeIcon icon={faCreditCard} /> </a></li>
+              <li> <a href="/about"><FontAwesomeIcon icon={faUser} /> About Me </a></li>
             </ul>
           </div>
         </div>

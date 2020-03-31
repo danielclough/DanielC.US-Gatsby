@@ -2,6 +2,10 @@ sidebar {
   font-size: 60%;
 }
 
+dropdown-menu {
+  margin-bottom: 1em; 
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -64,10 +68,12 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
+
+sidebar h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0.1em 0 0 0 !important;
 }
+
 mark {
   background-color: #ff0;
   color: #000;

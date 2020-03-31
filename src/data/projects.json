@@ -1,37 +1,43 @@
 {
   "projects": [
     {
-      "name": "DanielC.us",
-      "company": "Photography, Web Development, Beverage Specialist",
-      "description": "I am perfect for the job.",
-      "link": "https://danielc.us"
+      "role": "Full Stack Tech Lead",
+      "company": "Tea.Institute",
+      "description": "A tea project focused on consumer saftey and education.",
+      "link": "https://tea.Institute",
+      "start": "11/2019",
+      "end": ""
+    },
+    {
+      "role": "Developer, Designer",
+      "company": "DanielC.us",
+      "description": "My website, built from Javascript, APIs, and Markdown.",
+      "link": "https://danielc.us",
+      "start": "04/2019",
+      "end": ""
+    },
+    {
+      "role": "Developer, Designer",
+      "company": "BlackcoinNL",
+      "link": "https://blackcoin.nl",
+      "description": "I build and maintain website and community bots for BlackcoinNL.",
+      "start": "02/2019",
+      "end": ""
     },
     {
       "role": "Photographer",
       "company": "Daniel Clough Photography",
       "description": "Event Photography, Food Photography, Brand Development.",
-      "start": "08/2018",
+      "link": "https://danielc.us/daniel-clough-photography",
+      "start": "06/2015",
       "end": ""
     },
     {
-      "role": "Full Stack Tech Lead",
-      "company": "Tea.Institute",
-      "description": "An tea project focused on education and consumer saftey.",
-      "start": "11/2018",
-      "end": ""
-    },
-    {
-      "role": "Tea Master",
+      "role": "CEO",
       "company": "Immodestea",
-      "description": "Events and education.",
-      "start": "04/2018",
-      "end": ""
-    },
-    {
-      "role": "Developer",
-      "company": "BlackcoinNL",
-      "description": "Build and maintain website and community bots.",
-      "start": "10/2017",
+      "description": "Tea project focused on events and education.",
+      "link": "https://immodestea.com",
+      "start": "04/2015",
       "end": ""
     }
   ]
