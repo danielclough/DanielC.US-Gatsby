@@ -21,6 +21,7 @@ const TagIndex = ({ data }) => {
       <SEO
         title="Tags"
       />
+    <main className="side-margin">
       <header className="tag-page-head">
           <h1 className="page-head-title">Tags({tags.length})</h1>
       </header>
@@ -39,6 +40,7 @@ const TagIndex = ({ data }) => {
           })}
         </div>
     </article>
+    </main>
     </Layout>
   )
 }

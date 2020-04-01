@@ -14,7 +14,7 @@ const DetailsPage = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO title="Details" />
-
+    <main className="side-margin">
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <p>
@@ -216,6 +216,7 @@ const DetailsPage = ({ data }, location) => {
           </figure>
         </div>
       </article>
+    </main>
     </Layout>
   )
 }

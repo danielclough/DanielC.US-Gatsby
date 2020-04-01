@@ -8,7 +8,7 @@ const Experience = ({ data }) => (
         <article className="my-5" key={`${item.company}-${i}`}>
           <h2 className="item-header">{item.role}</h2>
           <h3 className="item-sub">
-            {item.company} | {item.start} - {item.end || 'PRESENT'}
+            {item.company} | {item.start ? item.start + '-' : ' '}  {item.end || 'PRESENT'}
           </h3>
           <p className="py-2">{item.description}</p>
         </article>
