@@ -1,10 +1,11 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import logo from "../../content/assets/DCP-logo-white.svg"
+import { graphql, StaticQuery, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Bio from "../components/bio"
 import PostCard from "../components/postCard"
+import Img from "gatsby-image"
+
 import '../assets/css/main.css';
 
 // import "../utils/global.scss"
@@ -18,7 +19,7 @@ const BlogIndex = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <main className="side-margin">
+    <main className="side-margin">
       <SEO
         title="Posts"
         keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
@@ -26,7 +27,7 @@ const BlogIndex = ({ data }, location) => {
         {/* <Bio /> */}
         {data.site.siteMetadata.description && (
           <header className="page-head">
-            <img src={logo} alt="Logo" />
+            <Img fluid={data.file.childImageSharp.fluid} />
           </header>
         )}
         <div className="post-feed">
@@ -46,9 +47,15 @@ const BlogIndex = ({ data }, location) => {
     </Layout>
   )
 }
-
 const indexQuery = graphql`
   query {
+    file (relativePath: { eq: "DCP-logo-white.png" }) {
+      childImageSharp {
+      fluid(maxWidth: 400) {
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
     site {
       siteMetadata {
         title

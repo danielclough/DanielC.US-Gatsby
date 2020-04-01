@@ -17,17 +17,6 @@ body {
   transition-delay: 0.25;
 }
 
-article.post-content {
-  padding: 2% !important;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  overflow: auto;
-  right: -13%;
-  background: black;
-  color: lightgrey;
-}
-
 .post-full-content {
   margin: 0;
   padding: 2% !important;

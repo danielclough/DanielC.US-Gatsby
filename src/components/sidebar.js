@@ -53,7 +53,7 @@ return (
         >
           <p>
             <Img fluid={data.file.childImageSharp.fluid} />
-                <Header
+                <Header className="small-center"
                   contacts={resume.contact}
                   name={resume.fullname}
                   role={resume.role}
@@ -62,7 +62,7 @@ return (
         </Link>
     </div>
       <div>
-        <div className="flex dropdown-menu">
+        <div className="flex-center dropdown-menu">
           <div className="dropdown">  
             <button className="dropbtn"><h4> Photography <FontAwesomeIcon icon={faCaretDown} /></h4></button>
             <ul className="dropdown-content" id="photo">
@@ -93,7 +93,7 @@ return (
             </ul>
           </div>
         </div>
-          <div className="main-list">
+          <div className="main-list flex-center">
             <ul>
               <li> <a href="/"><FontAwesomeIcon icon={faHome} /> Home </a></li>
               <li> <a href="/"><FontAwesomeIcon icon={faIdCard} /> Résumé </a></li>

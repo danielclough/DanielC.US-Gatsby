@@ -7,11 +7,11 @@ import SEO from "../components/seo"
 
 const About = () => (
   <Layout>
-    <article className="post-content">
+    <main className="side-margin">
 	    <SEO title="All Payments Accepted" />
 	    <h1>All Payment Types Accepted</h1>
 	    <p>Send me Money!</p>
-	</article>
+	</main>
   </Layout>
 )
 
