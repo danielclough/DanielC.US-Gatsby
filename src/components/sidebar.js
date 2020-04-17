@@ -88,8 +88,8 @@ return (
             <ul className="dropdown-content" id="webdev">
               <li> <a href="https://github.com/danielclough/"><FontAwesomeIcon icon={faGithub} /> Github </a></li>
               <li> <a href="https://TranslateJPN.com"><FontAwesomeIcon icon={faGlobe} /> TranslateJPN </a></li>
-              <li> <a href="https://valerielozada.com/"><FontAwesomeIcon icon={faGlobe} /> Valerie Lozada </a></li>
               <li> <a href="https://Blackcoin.nl"><FontAwesomeIcon icon={faGlobe} /> BlackcoinNL </a></li>
+              <li> <a href="https://Bank.Rehab/"><FontAwesomeIcon icon={faGlobe} /> Bank.Rehab </a></li>
             </ul>
           </div>
         </div>
