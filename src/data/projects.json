@@ -1,27 +1,11 @@
 {
   "projects": [
     {
-      "role": "Full Stack Tech Lead",
-      "company": "Tea.Institute",
-      "description": "A tea project focused on consumer saftey and education.",
-      "link": "https://tea.Institute",
-      "start": "11/2019",
-      "end": ""
-    },
-    {
-      "role": "Developer, Designer",
-      "company": "DanielC.us",
-      "description": "My website, built from Javascript, APIs, and Markdown.",
-      "link": "https://danielc.us",
-      "start": "04/2019",
-      "end": ""
-    },
-    {
-      "role": "Developer, Designer",
-      "company": "BlackcoinNL",
-      "link": "https://blackcoin.nl",
-      "description": "I build and maintain website and community bots for BlackcoinNL.",
-      "start": "02/2019",
+      "role": "Founder",
+      "company": "Immodestea",
+      "description": "Tea project focused on events and education.",
+      "link": "https://immodestea.com",
+      "start": "04/2015",
       "end": ""
     },
     {
@@ -33,11 +17,27 @@
       "end": ""
     },
     {
-      "role": "CEO",
-      "company": "Immodestea",
-      "description": "Tea project focused on events and education.",
-      "link": "https://immodestea.com",
-      "start": "04/2015",
+      "role": "Developer, Designer",
+      "company": "BlackcoinNL",
+      "link": "https://blackcoin.nl",
+      "description": "I build and maintain website and community bots for BlackcoinNL.",
+      "start": "02/2019",
+      "end": ""
+    },
+    {
+      "role": "Full Stack Tech Lead",
+      "company": "Tea.Institute",
+      "description": "A tea project focused on consumer saftey and education.",
+      "link": "https://tea.Institute",
+      "start": "11/2019",
+      "end": ""
+    },
+    {
+      "role": "Developer, Designer",
+      "company": "DanielC.us",
+      "description": "This website: built from Javascript, APIs, and Markdown.",
+      "link": "https://danielc.us",
+      "start": "04/2019",
       "end": ""
     }
   ]
