@@ -5,6 +5,10 @@ const generateRSSFeed = require(`./src/utils/rss/generate-feed`)
 
 let ghostConfig
 
+require('dotenv').config({
+  path: `.env`,
+});
+
 try {
     ghostConfig = require(`./.ghost`)
 } catch (e) {
@@ -40,6 +44,44 @@ module.exports = {
         },
     },
     plugins: [
+    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GitHub',
+        fieldName: 'github',
+        url: 'https://api.github.com/graphql',
+        headers: {
+          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+        },
+        fetchOptions: {},
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: config.themeColor,
+        showSpinner: false,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: `${__dirname}/src/images/daniel-byKiko-sm.png`,
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -87,7 +129,7 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /assets/,
+          include: /svg/,
         },
       },
     },
