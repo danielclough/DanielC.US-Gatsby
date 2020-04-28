@@ -12,9 +12,6 @@
   "resolutions": {
     "sharp": "0.23.4"
   },
-  "engines": {
-    "node": ">= 13.8.0"
-  },
   "bugs": {
     "url": "https://github.com/danielclough/DanielC.US-Gatsby/issues"
   },
@@ -42,7 +39,7 @@
     "dotenv": "^6.2.0",
     "eslint-plugin-graphql": "^3.1.1",
     "formik": "^2.1.4",
-    "gatsby": "2.19.23",
+    "gatsby": "^2.9.10",
     "gatsby-awesome-pagination": "0.3.5",
     "gatsby-cli": "^2.11.3",
     "gatsby-image": "2.2.41",
