@@ -9,7 +9,7 @@ import resume from '../data/profile.json';
 
 import "../assets/css/layout.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faCamera, faLeaf, faIdCard, faDollarSign, faCreditCard, faUser, faGlobe, faHome, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faCamera, faLeaf, faIdCard, faDollarSign, faCreditCard, faUser, faRss, faGlobe, faHome, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithub, faCreativeCommons, faFacebook, faInstagram, faBitcoin, faPaypal } from '@fortawesome//free-brands-svg-icons'
 
 
@@ -38,13 +38,13 @@ return (
 
     }}
   >
-    <div
+    <div className="homeLinkDiv" 
       style={{
         margin: `0 auto`,
         maxWidth: `100%`,
       }}
     >
-        <Link
+        <Link className="homeLink flex-center left-md" 
           to="/"
           style={{
             color: `white`,
@@ -61,7 +61,7 @@ return (
           </p>
         </Link>
     </div>
-      <div>
+      <div className="linksDiv right-md" >
         <div className="flex-center dropdown-menu">
           <div className="dropdown">  
             <button className="dropbtn"><h4> Photography <FontAwesomeIcon icon={faCaretDown} /></h4></button>
@@ -100,10 +100,10 @@ return (
               <li><a href="/copyright"> <FontAwesomeIcon icon={faCreativeCommons} /> Creative Commons </a></li>
               <li> <a href="/payment"><FontAwesomeIcon icon={faBitcoin} />  <FontAwesomeIcon icon={faPaypal} /> Pay Me <FontAwesomeIcon icon={faDollarSign} /> <FontAwesomeIcon icon={faCreditCard} /> </a></li>
               <li> <a href="/about"><FontAwesomeIcon icon={faUser} /> About Me </a></li>
+              <li> <a href="/blog"><FontAwesomeIcon icon={faRss} /> Blog </a></li>
             </ul>
           </div>
         </div>
-
   </sidebar>
 )}
 
