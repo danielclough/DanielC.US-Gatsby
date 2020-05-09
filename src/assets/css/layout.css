@@ -1999,7 +1999,7 @@ sidebar a:hover:not(.active) {
     display: block;
   }
   .homeLinkDiv{
-    margin: -1.5rem auto !important;
+    margin: 0 auto !important;
     margin-bottom: -4.5rem !important;
   }
   main.side-margin {
@@ -2025,7 +2025,7 @@ sidebar a:hover:not(.active) {
   }
 
   .homeLinkDiv{
-    margin: -1.5rem auto !important;
+    margin: 0 auto !important;
     margin-bottom: -4.5rem !important;
   }
   main.side-margin {
@@ -2053,7 +2053,7 @@ sidebar a:hover:not(.active) {
   }
 
   .homeLinkDiv{
-    margin: -1.5rem auto !important;
+    margin: 0 auto !important;
     margin-bottom: -4.5rem !important;
   }
   main.side-margin {
@@ -2086,6 +2086,10 @@ sidebar a:hover:not(.active) {
     right: -27%;
     width: 99% !important;
     margin: 0;
+  }
+  .homeLinkDiv{
+    margin: 0 auto !important;
+    margin-bottom: -4.5rem !important;
   }
   .linksDiv {
     width: 100% !important;
