@@ -3,14 +3,12 @@ import _ from "lodash";
 import { Link } from "gatsby";
 import { graphql, StaticQuery } from "gatsby"
 
-import '../assets/css/main.css';
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// import "../utils/global.scss"
-import "../utils/normalize.css"
-import "../utils/css/screen.css"
+import '../assets/css/main.css';
+import "../assets/css/normalize.css"
+import "../assets/css/layout.css"
 
 const TagIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title

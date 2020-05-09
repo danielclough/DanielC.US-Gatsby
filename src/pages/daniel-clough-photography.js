@@ -5,8 +5,8 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "../utils/normalize.css"
-import "../utils/css/screen.css"
+import "../assets/css/normalize.css"
+import "../assets/css/layout.css"
 
 const DetailsPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title

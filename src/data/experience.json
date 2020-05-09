@@ -1,15 +1,31 @@
 {
   "experience": [
     {
+      "role": "Photographer",
+      "company": "Vegenation Downtown",
+      "description": "Photography of staff and food, Las Vegas",
+      "link":"",
+      "start": "",
+      "end": "05/07/2020"
+    },
+    {
+      "role": "Photographer",
+      "company": "La Strega",
+      "description": "Photography of staff and food, Las Vegas",
+      "link":"",
+      "start": "",
+      "end": "05/07/2020"
+    },
+    {
       "role": "Wine Staff",
       "company": "Keep Memory Alive",
-      "description": "24rd Annual “Power of Love Gala”, Las Vegas",
+      "description": "24th Annual “Power of Love Gala”, Las Vegas",
       "link":"",
       "start": "",
       "end": "03/07/2020"
     },
     {
-      "role": "Political Polling",
+      "role": "Polling",
       "company": "Edison Research",
       "description": "Democratic Caucus, Las Vegas",
       "link":"",

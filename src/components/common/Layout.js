@@ -8,7 +8,7 @@ import { Navigation } from '.'
 import config from '../../utils/siteConfig'
 
 // Styles
-import '../../styles/app.css'
+import '../../assets/css/layout.css'
 
 /**
 * Main layout component

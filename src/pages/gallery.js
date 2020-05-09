@@ -7,10 +7,9 @@ import PostCard from "../components/postCard"
 import Img from "gatsby-image"
 
 import '../assets/css/main.css';
+import "../assets/css/normalize.css"
+import "../assets/css/layout.css"
 
-// import "../utils/global.scss"
-import "../utils/normalize.css"
-import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
