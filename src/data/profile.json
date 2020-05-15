@@ -57,11 +57,11 @@
         },
         {
           "name": "HTML/CSS",
-          "percent": 90
+          "percent": 95
         },
         {
           "name": "Javascript",
-          "percent": 50
+          "percent": 30
         }
       ]
     },
@@ -115,14 +115,20 @@
     {
       "institution": "International Training Massage, Thailand",
       "degree": "Certified Advanced Teacher Training",
-      "start": "2013",
-      "end": "2006"
+      "start": "Jan. '08",
+      "end": "April '08"
     },
     {
       "institution": "Himalayan Institute, USA",
       "degree": "Yoga Initiate",
-      "start": "2002",
-      "end": "2006"
+      "start": "July, 2004",
+      "end": "July, 2005"
+    },
+    {
+      "institution": "Himalayan Institute, USA",
+      "degree": "Yoga Initiate",
+      "start": "July, 2001",
+      "end": "Oct. 2001"
     }
   ],
   "social": [
