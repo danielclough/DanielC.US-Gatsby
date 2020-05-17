@@ -5,11 +5,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Header from "./header"
 
-import resume from '../data/profile.json';
+import resume from '../assets/data/profile.json';
 
 import "../assets/css/layout.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faCamera, faLeaf, faIdCard, faDollarSign, faCreditCard, faUser, faRss, faGlobe, faHome, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faCamera, faLeaf, faIdCard, faDollarSign, faCreditCard, faUser, faRss, faGlobe, faHome, faCaretDown, faCopyright, faAddressBook } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithub, faCreativeCommons, faFacebook, faInstagram, faBitcoin, faPaypal } from '@fortawesome//free-brands-svg-icons'
 
 
@@ -97,7 +97,7 @@ return (
             <ul>
               <li> <a href="/"><FontAwesomeIcon icon={faHome} /> Home </a></li>
               <li> <a href="/"><FontAwesomeIcon icon={faIdCard} /> Résumé </a></li>
-              <li><a href="/copyright"> <FontAwesomeIcon icon={faCreativeCommons} /> Creative Commons </a></li>
+              <li><a href="/copyright"> <FontAwesomeIcon icon={faCopyright} /> Copyright <FontAwesomeIcon icon={faCreativeCommons} /> </a></li>
               <li> <a href="/payment"><FontAwesomeIcon icon={faBitcoin} />  <FontAwesomeIcon icon={faPaypal} /> Pay Me <FontAwesomeIcon icon={faDollarSign} /> <FontAwesomeIcon icon={faCreditCard} /> </a></li>
               <li> <a href="/about"><FontAwesomeIcon icon={faUser} /> About Me </a></li>
               <li> <a href="/blog"><FontAwesomeIcon icon={faRss} /> Blog </a></li>

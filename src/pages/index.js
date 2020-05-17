@@ -11,9 +11,9 @@ import {
   SEO
 } from '../components';
 
-import projects from '../data/projects';
-import experience from '../data/experience';
-import resume from '../data/profile';
+import projects from '../assets/data/projects';
+import experience from '../assets/data/experience';
+import resume from '../assets/data/profile';
 
 import '../assets/css/main.css';
 
@@ -43,7 +43,7 @@ const IndexPage = () => (
 	            ))}
 	        </div>
 	      </div>
-	      <Footer social={resume.social} />
+	      <Footer />
 	    </div>
 	  </main>
   </div>

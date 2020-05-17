@@ -522,7 +522,7 @@ body {
     object-fit: cover;
 }
 
-.content-body li {
+.content-body ul li {
 color: white;
 background-image: url(../bullet.png);
 background-repeat: no-repeat;

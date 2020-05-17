@@ -1,8 +1,8 @@
 import React from 'react';
-import MailIcon from '../assets/mail.svg';
-import MobileIcon from '../assets/mobile.svg';
-import GlobeIcon from '../assets/globe.svg';
-import LocationIcon from '../assets/location.svg';
+import MailIcon from '../assets/images/svg/icons/mail.svg';
+import MobileIcon from '../assets/images/svg/icons/mobile.svg';
+import GlobeIcon from '../assets/images/svg/icons/globe.svg';
+import LocationIcon from '../assets/images/svg/icons/location.svg';
 
 const Contact = ({ field, value }) => (
   <span className="flex my-2 text-primary-900 tracking-widest items-center">

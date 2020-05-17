@@ -1,13 +1,13 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Container, Button } from '../../common'
-import Dev from '../../../svg/illustrations/dev.svg'
+import { Button } from '../common'
+import Dev from '../../assets/images/svg/illustrations/dev.svg'
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles'
-import config from  '../../../utils/siteConfig'
+import config from  '../../utils/siteConfig'
 
-export const Intro = () => (
+const Intro = () => (
   <Wrapper>
-    <IntroWrapper as={Container}>
+    <IntroWrapper>
       <Details>
         <h1>Hi There!</h1>
         <h4>{config.defaultDescription}</h4>
@@ -21,3 +21,5 @@ export const Intro = () => (
     </IntroWrapper>
   </Wrapper>
 );
+
+export default Intro

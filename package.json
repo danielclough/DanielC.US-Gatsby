@@ -12,7 +12,7 @@
   "resolutions": {
     "sharp": "0.25.2"
   },
-    "engines": {
+  "engines": {
     "node": ">= 13.8.0"
   },
   "bugs": {

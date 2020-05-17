@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import overlayIllustration from '../../../svg/illustrations/overlay.svg';
+import overlayIllustration from '../../assets/images/svg/illustrations/overlay.svg';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;

@@ -42,116 +42,106 @@ module.exports = {
         social: {
           twitter: config.twitter,
         },
-    },
-    plugins: [
-    'gatsby-plugin-styled-components',
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'GitHub',
-        fieldName: 'github',
-        url: 'https://api.github.com/graphql',
-        headers: {
-          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
-        },
-        fetchOptions: {},
       },
-    },
-    {
-      resolve: 'gatsby-plugin-nprogress',
-      options: {
-        color: config.themeColor,
-        showSpinner: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: `${__dirname}/src/images/daniel-byKiko-sm.png`,
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
+      plugins: [
+      `gatsby-remark-prismjs`,
+      `gatsby-remark-copy-linked-files`,
+      `gatsby-remark-smartypants`,
+      'gatsby-transformer-json',
+      'gatsby-plugin-netlify-cms',
+      `gatsby-plugin-postcss`,
+      `gatsby-plugin-netlify`,
+      `gatsby-remark-prismjs`,
+      `gatsby-remark-copy-linked-files`,
+      `gatsby-remark-smartypants`,
+      `gatsby-plugin-sharp`,
+      `gatsby-transformer-sharp`,
+      `gatsby-plugin-catch-links`,
+      `gatsby-plugin-react-helmet`,
+      `gatsby-plugin-force-trailing-slashes`,
+      `gatsby-plugin-offline`,
+      'gatsby-plugin-styled-components',
+      {
+        resolve: 'gatsby-source-graphql',
+        options: {
+          typeName: 'GitHub',
+          fieldName: 'github',
+          url: 'https://api.github.com/graphql',
+          headers: {
+            Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+          },
+          fetchOptions: {},
         },
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+      {
+        resolve: 'gatsby-plugin-nprogress',
+        options: {
+          color: config.themeColor,
+          showSpinner: false,
+        },
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1360,
-              withWebp: true,
-              showCaptions: true,
-              quality: 75,
-              wrapperStyle: `margin: 7vw 0;`,
+      {
+        resolve: 'gatsby-plugin-favicon',
+          options: {
+            logo: `${__dirname}/src/assets/images/daniel-byKiko-sm.png`,
+            injectHTML: true,
+            icons: {
+              android: true,
+              appleIcon: true,
+              appleStartup: true,
+              coast: false,
+              favicons: true,
+              firefox: true,
+              twitter: false,
+              yandex: false,
+              windows: false,
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
+        },
+        {
+          resolve: `gatsby-transformer-remark`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+             plugins: [
+              {
+                resolve: `gatsby-remark-images`,
+                options: {
+                  maxWidth: 1360,
+                  withWebp: true,
+                  showCaptions: true,
+                  quality: 75,
+                  wrapperStyle: `margin: 7vw 0;`,
+                  },
+                },
+              ],
             },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
-    },
-    'gatsby-transformer-json',
-    'gatsby-plugin-netlify-cms',
-    `gatsby-plugin-postcss`,
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: /svg/,
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true,
-        tailwind: true, // Enable tailwindcss support
-            develop: true, // Enable while using `gatsby develop`
-            // tailwind: true, // Enable tailwindcss support
-            // whitelist: ['whitelist'], // Don't remove this selector
+        {
+          resolve: `gatsby-remark-responsive-iframe`,
+          options: {
+            wrapperStyle: `margin-bottom: 1.0725rem`,
           },
         },
-        `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-catch-links`,
-        `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-force-trailing-slashes`,
-        `gatsby-plugin-offline`,
+        {
+          resolve: `gatsby-plugin-purgecss`,
+          options: {
+            printRejected: true,
+            tailwind: true, // Enable tailwindcss support
+                develop: true, // Enable while using `gatsby develop`
+                // tailwind: true, // Enable tailwindcss support
+                // whitelist: ['whitelist'], // Don't remove this selector
+            },
+        },
         /**
          *  Content Plugins
          */
+        {
+          resolve: 'gatsby-plugin-react-svg',
+          options: {
+            rule: {
+              include: '/src/assets/images/svg/',
+            },
+          },
+        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -164,9 +154,23 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                path: path.join(__dirname, `src`, `images`),
+                path: `${__dirname}/src/assets/images`,
                 name: `images`,
             },
+        },
+        {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+            path: `${__dirname}/src/assets/blog`,
+            name: `blog`,
+          },
+        },
+        {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+            path: `${__dirname}/src/assets/data`,
+            name: `data`,
+          },
         },
         {
             resolve: `gatsby-source-ghost`,
@@ -175,152 +179,146 @@ module.exports = {
                     ? ghostConfig.development
                     : ghostConfig.production,
         },
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 1360,
+            withWebp: true,
+            showCaptions: true,
+            quality: 75,
+            wrapperStyle: `margin: 7vw 0;`,
+          },
+        },
+        {
+          resolve: `gatsby-remark-responsive-iframe`,
+          options: {
+            wrapperStyle: `margin-bottom: 1.0725rem`,
+          },
+        },
+      {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+          trackingId: `UA-136138335-2`,
+        },
+      },
         /**
          *  Utility Plugins
          */
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `DanielC.us site`,
-        short_name: `DanielC.us`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        icon: `daniel-byKiko-sm.png`, // This path is relative to the root of the site.
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: `minimal-ui`,
-        legacy: true,
-                query: `
-                {
-                    allGhostSettings {
-                        edges {
-                            node {
-                                title
-                                description
-                            }
-                        }
-                    }
-                }
-              `,
-            },
-        },
-        {
-            resolve: `gatsby-plugin-feed`,
-            options: {
-                query: `
-                {
-                    allGhostSettings {
-                        edges {
-                            node {
-                                title
-                                description
-                            }
-                        }
-                    }
-                }
-              `,
-                feeds: [
-                    generateRSSFeed(config),
-                ],
-            },
-        },
-        {
-            resolve: `gatsby-plugin-advanced-sitemap`,
-            options: {
-                query: `
-                {
-                    allGhostPost {
-                        edges {
-                            node {
-                                id
-                                slug
-                                updated_at
-                                created_at
-                                feature_image
-                            }
-                        }
-                    }
-                    allGhostPage {
-                        edges {
-                            node {
-                                id
-                                slug
-                                updated_at
-                                created_at
-                                feature_image
-                            }
-                        }
-                    }
-                    allGhostTag {
-                        edges {
-                            node {
-                                id
-                                slug
-                                feature_image
-                            }
-                        }
-                    }
-                    allGhostAuthor {
-                        edges {
-                            node {
-                                id
-                                slug
-                                profile_image
-                            }
-                        }
-                    }
-                }`,
-                mapping: {
-                    allGhostPost: {
-                        sitemap: `posts`,
-                    },
-                    allGhostTag: {
-                        sitemap: `tags`,
-                    },
-                    allGhostAuthor: {
-                        sitemap: `authors`,
-                    },
-                    allGhostPage: {
-                        sitemap: `pages`,
-                    },
-                },
-                exclude: [
-                    `/dev-404-page`,
-                    `/404`,
-                    `/404.html`,
-                    `/offline-plugin-app-shell-fallback`,
-                ],
-                createLinkInHead: true,
-                addUncaughtPages: true,
-            },
-        },
-    `gatsby-plugin-netlify`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1360,
-              withWebp: true,
-              showCaptions: true,
-              quality: 75,
-              wrapperStyle: `margin: 7vw 0;`,
-            },
+      {
+        resolve: `gatsby-plugin-manifest`,
+        options: {
+          name: `DanielC.us Blog`,
+          short_name: `DanielC.us`,
+          start_url: `/`,
+          background_color: `#f7f0eb`,
+          icon: `daniel-byKiko-sm.png`, // This path is relative to the root of the site.
+          background_color: config.backgroundColor,
+          theme_color: config.themeColor,
+          display: `minimal-ui`,
+          legacy: true,
+                  query: `
+                  {
+                      allGhostSettings {
+                          edges {
+                              node {
+                                  title
+                                  description
+                              }
+                          }
+                      }
+                  }
+                `,
+              },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              resolve: `gatsby-plugin-feed`,
+              options: {
+                  query: `
+                  {
+                      allGhostSettings {
+                          edges {
+                              node {
+                                  title
+                                  description
+                              }
+                          }
+                      }
+                  }
+                `,
+                  feeds: [
+                      generateRSSFeed(config),
+                  ],
+              },
           },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
-        {
-          resolve: `gatsby-plugin-google-analytics`,
-          options: {
-            trackingId: `UA-136138335-2`,
+          {
+              resolve: `gatsby-plugin-advanced-sitemap`,
+              options: {
+                  query: `
+                  {
+                      allGhostPost {
+                          edges {
+                              node {
+                                  id
+                                  slug
+                                  updated_at
+                                  created_at
+                                  feature_image
+                              }
+                          }
+                      }
+                      allGhostPage {
+                          edges {
+                              node {
+                                  id
+                                  slug
+                                  updated_at
+                                  created_at
+                                  feature_image
+                              }
+                          }
+                      }
+                      allGhostTag {
+                          edges {
+                              node {
+                                  id
+                                  slug
+                                  feature_image
+                              }
+                          }
+                      }
+                      allGhostAuthor {
+                          edges {
+                              node {
+                                  id
+                                  slug
+                                  profile_image
+                              }
+                          }
+                      }
+                  }`,
+                  mapping: {
+                      allGhostPost: {
+                          sitemap: `posts`,
+                      },
+                      allGhostTag: {
+                          sitemap: `tags`,
+                      },
+                      allGhostAuthor: {
+                          sitemap: `authors`,
+                      },
+                      allGhostPage: {
+                          sitemap: `pages`,
+                      },
+                  },
+                  exclude: [
+                      `/dev-404-page`,
+                      `/404`,
+                      `/404.html`,
+                      `/offline-plugin-app-shell-fallback`,
+                  ],
+                  createLinkInHead: true,
+                  addUncaughtPages: true,
+              },
           },
-        },
     ],
 }

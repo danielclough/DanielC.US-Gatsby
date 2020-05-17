@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
-import { Button, Input } from '../../../common';
+import { Button, Input } from '../../common';
 import { Error, Center, InputField } from './styles';
 
 export default () => (

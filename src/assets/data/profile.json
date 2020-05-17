@@ -57,11 +57,11 @@
         },
         {
           "name": "HTML/CSS",
-          "percent": 90
+          "percent": 95
         },
         {
           "name": "Javascript",
-          "percent": 50
+          "percent": 40
         }
       ]
     },
@@ -113,30 +113,28 @@
   ],
   "education": [
     {
-      "institution": "International Training Massage, Thailand",
-      "degree": "Certified Advanced Teacher Training",
-      "start": "2013",
-      "end": "2006"
+      "institution": "Himalayan Institute, USA",
+      "degree": "Yoga Initiate",
+      "start": "July, 2001",
+      "end": "Oct. 2001"
     },
     {
       "institution": "Himalayan Institute, USA",
-      "degree": "Yoga Initiate",
-      "start": "2002",
-      "end": "2006"
+      "degree": "Yoga and Ayurvedic Cooking",
+      "start": "July, 2004",
+      "end": "July, 2005"
+    },
+    {
+      "institution": "International Training Massage (ITM), Thailand",
+      "degree": "Certified Advanced Teacher Training",
+      "start": "Jan. 2008",
+      "end": "April, 2008"
     }
   ],
   "social": [
     {
-      "service": "youtube",
-      "url": "https://www.youtube.com/danielclough"
-    },
-    {
-      "service": "linkedin",
-      "url": "https://www.linkedin.com/in/danielclough"
-    },
-    {
-      "service": "twitter",
-      "url": "https://twitter.com/tradingtea"
+      "service": "github",
+      "url": "https://github.com/danielclough"
     },
     {
       "service": "facebook",
@@ -147,8 +145,16 @@
       "url": "https://www.instagram.com/danielcloughphotography"
     },
     {
-      "service": "github",
-      "url": "https://github.com/danielclough"
+      "service": "linkedin",
+      "url": "https://www.linkedin.com/in/daniel-clough-9349b8b3"
+    },
+    {
+      "service": "twitter",
+      "url": "https://twitter.com/tradingtea"
+    },
+    {
+      "service": "youtube",
+      "url": "https://www.youtube.com/danielclough"
     }
   ]
 }
