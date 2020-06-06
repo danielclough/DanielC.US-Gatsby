@@ -61,7 +61,11 @@
         },
         {
           "name": "Javascript",
+<<<<<<< HEAD:src/assets/data/profile.json
           "percent": 40
+=======
+          "percent": 30
+>>>>>>> d347eec99af4651c861d17150b4b0656a4c325ae:src/data/profile.json
         }
       ]
     },
@@ -113,6 +117,7 @@
   ],
   "education": [
     {
+<<<<<<< HEAD:src/assets/data/profile.json
       "institution": "Himalayan Institute, USA",
       "degree": "Yoga Initiate",
       "start": "July, 2001",
@@ -129,6 +134,24 @@
       "degree": "Certified Advanced Teacher Training",
       "start": "Jan. 2008",
       "end": "April, 2008"
+=======
+      "institution": "International Training Massage, Thailand",
+      "degree": "Certified Advanced Teacher Training",
+      "start": "Jan. '08",
+      "end": "April '08"
+    },
+    {
+      "institution": "Himalayan Institute, USA",
+      "degree": "Yoga Initiate",
+      "start": "July, 2004",
+      "end": "July, 2005"
+    },
+    {
+      "institution": "Himalayan Institute, USA",
+      "degree": "Yoga Initiate",
+      "start": "July, 2001",
+      "end": "Oct. 2001"
+>>>>>>> d347eec99af4651c861d17150b4b0656a4c325ae:src/data/profile.json
     }
   ],
   "social": [
