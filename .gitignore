@@ -75,3 +75,6 @@ yarn-error.log
 .netlify/
 
 .tmp/
+
+# Local Netlify folder
+.netlify
