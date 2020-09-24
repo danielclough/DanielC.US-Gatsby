@@ -1161,6 +1161,16 @@ margin-left: 3rem;
     border-radius: 100%;
 }
 
+.author-profile-image  {
+    display: block;
+    overflow: hidden;
+    margin: 0 0 0 -6px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 100%;
+}
+
 .author-name-tooltip {
     position: absolute;
     bottom: 105%;
