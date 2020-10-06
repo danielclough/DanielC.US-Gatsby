@@ -535,6 +535,13 @@ body {
   margin-left: 35px;
 }
 
+.content-body ol ul li {
+  list-style-type: circle;
+  padding: 5px;
+background-image: none;
+  margin-left: 35px;
+}
+
 .content-body ul li {
 color: white;
 background-image: url(../bullet.png);
