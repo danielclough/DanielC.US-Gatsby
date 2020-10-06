@@ -5,7 +5,7 @@ sidebar {
 }
 
 p {
-  margin: 1.5rem !important;
+  margin: 1rem;
 }
 @media (max-width: 800px) {
   p {
@@ -642,58 +642,69 @@ margin-left: 3rem;
     font-weight: 700;
 }
 
+
 .content-body pre {
     margin: 0.4em 0 1.8em;
     font-size: 1.6rem;
     line-height: 1.4em;
-    white-space: pre-wrap;
-    padding: 20px;
-    background: var(--color-base);
+    padding: 2em;
     color: #fff;
-    border-radius: 12px;
-}
-
-
-.content-body code {
-  padding: 0 5px 2px;
-  font-size: 0.8em;
-  line-height: 1em;
-  font-weight: 400 !important;
-  /* background: var(--color-bg); */
-  background: #404040 !important;
-  border-radius: 3px !important;
-}
-
-.content-body p code {
-  word-break: break-all;
-}
-
-.content-body pre {
-  overflow-x: auto;
-  margin: 1.5em 0 3em;
-  padding: 20px;
-  max-width: 100%;
   /* border: color(var(--color-base) l(-10%)) 1px solid; */
   border: color(var(--color-bg-bright) l(-0%)) 1px solid !important;
   /* color: var(--color-bg); */
   color: var(--color-base);
-  font-size: 1.4rem;
-  line-height: 1.5em;
-  /* background: color(var(--color-base) l(-3%)); */
-  background: var(--color-bg-dark) !important;
-  border-radius: 5px;
 }
 
 .content-body pre code {
-  padding: 0;
   font-size: inherit;
-  line-height: inherit;
-  background: transparent;
+  line-height: 0;
+  background: #404040;
+  box-shadow: 0em .5em 2em rgba(200,210,210,.5);
+
 }
+
+.content-body code {
+    font-family: monospace;
+    position: relative;
+    overflow: auto;
+  padding: 0 5px 2px;
+  font-size: 0.8em;
+  font-weight: 400 !important;
+  /* background: var(--color-bg); */
+  background: #404040 !important;
+  border-radius: 5px !important;
+        border: 0;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+}
+
 
 .content-body pre code :not(span) {
   color: inherit;
 }
+
+
+tbody tr:nth-child(odd) {
+  background: #202020;
+}
+
+tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+    text-shadow: 0 1px 0 #fff;
+}
+
+table {
+    border-collapse: separate !important;
+    border-spacing: 5px;
+    border-color: gray;
+}
+
 
 
 .site-wrapper {
