@@ -525,20 +525,26 @@ body {
 .content-body ol {
   margin: 2rem 1rem;
   background: #111111;
+  padding-left: 2.5rem;
 }
 
+@media (max-width: 800px) {
+  .content-body ol {
+  padding-left: 1rem;
+}
+}
 
 .content-body ol li {
   list-style-type: upper-roman;
-  padding: 5px;
-  margin-left: 35px;
+  padding: 1rem;
+  margin-left: 1rem;
 }
 
 .content-body ol ul li {
   list-style-type: circle;
-  padding: 5px;
+  padding: .25rem;
 background-image: none;
-  margin-left: 35px;
+  margin-left: .5rem;
 }
 
 .content-body ul li {
@@ -547,7 +553,7 @@ background-image: url(../bullet.png);
 background-repeat: no-repeat;
 background-position: 0 .4em;
 padding-left: 2rem;
-margin-left: 3rem;
+margin-left: .5rem;
 }
 
 @media (max-width: 800px) {
