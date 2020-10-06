@@ -522,6 +522,19 @@ body {
     object-fit: cover;
 }
 
+.content-body ol {
+  margin: 2rem 1rem;
+  background: #111111;
+  padding: 20px;
+}
+
+
+.content-body ol li {
+  list-style-type: upper-roman;
+  padding: 5px;
+  margin-left: 35px;
+}
+
 .content-body ul li {
 color: white;
 background-image: url(../bullet.png);
