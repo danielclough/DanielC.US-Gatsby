@@ -645,7 +645,7 @@ margin-left: 3rem;
 
 .content-body pre {
     margin: 0.4em 0 1.8em;
-    font-size: 1.6rem;
+  font-size: inherit;
     line-height: 1.4em;
     padding: 2em;
     color: #fff;
@@ -668,7 +668,7 @@ margin-left: 3rem;
     position: relative;
     overflow: auto;
   padding: 0 5px 2px;
-  font-size: 0.8em;
+  font-size: inherit;
   font-weight: 400 !important;
   /* background: var(--color-bg); */
   background: #404040 !important;
@@ -703,6 +703,7 @@ table {
     border-collapse: separate !important;
     border-spacing: 5px;
     border-color: gray;
+    max-width: 100% !important;
 }
 
 
