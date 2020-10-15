@@ -515,8 +515,6 @@ body {
     font-family: var(--font-serif);
 }
 
-
-
 .post-feature-image img {
     margin: 0 0 3vw;
     width: 100%;
@@ -524,22 +522,21 @@ body {
     object-fit: cover;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1440px) {
   .post-feature-image img {
-    height: 337px;
+    height: 607px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
   .post-feature-image img {
-    height: 253px;
+    height: 456px;
   }
 }
 
-
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .post-feature-image img {
-    height: 169px;
+    height: 295px;
   }
 }
 
