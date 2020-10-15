@@ -515,11 +515,32 @@ body {
     font-family: var(--font-serif);
 }
 
+
+
 .post-feature-image img {
     margin: 0 0 3vw;
     width: 100%;
     height: 911px;
     object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .post-feature-image img {
+    height: 337px;
+  }
+}
+
+@media (max-width: 600px) {
+  .post-feature-image img {
+    height: 253px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .post-feature-image img {
+    height: 169px;
+  }
 }
 
 .content-body ol {
@@ -528,17 +549,9 @@ body {
   padding-left: 2.5rem;
 }
 
-@media (max-width: 800px) {
-  .post-feature-image img {
-    margin: 0;
-    width: 100%;
-    height: 30vw;
-    object-fit: contain;
-}
 
   .content-body ol {
   padding-left: 1rem;
-}
 }
 
 .content-body ol li {
