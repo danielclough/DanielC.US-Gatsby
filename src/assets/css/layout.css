@@ -1130,7 +1130,7 @@ tbody:hover tr:hover td {
 .post-card-image {
     width: 100%;
     height: 400px;
-    background-position: no-repeat center center);
+    background-position: center);
   background-size: cover;
 }
 
@@ -1141,7 +1141,7 @@ tbody:hover tr:hover td {
     flex-direction: column;
   margin: 0;
   padding: 0;
-  background-position: no-repeat center center;
+  background-position: center;
   overflow: none;
   width: 100%;
 }
