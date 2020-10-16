@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 
 import "../assets/css/normalize.css"
 import "../assets/css/layout.css"
+import "../assets/css/components/forms.css"
 
 const DetailsPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -46,7 +47,7 @@ const DetailsPage = ({ data }, location) => {
 
           <hr />
           <h2 id="prices">Price Details</h2>
-          <table>
+          <table className="white-bg"> 
             <thead>
               <tr>
                 <th>Name</th>
@@ -181,33 +182,7 @@ const DetailsPage = ({ data }, location) => {
             </div>
           </form>
           <hr />
-          <h2 id="copyright">Copyright Details</h2>
-          <h3 id="sharing">Sharing</h3>
-          <p>
-            Images may be shared under conditions of the{" "}
-            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
-              Creative Commons 4.0 License.
-            </a>{" "}
-            <br />
-          </p>
-          <h3 id="attribution">Attribution</h3>
-          <p>
-            If you share my photography you are required by law to link to my
-            webpage, Facebook page, or Instagram account.
-          </p>
-          <h3 id="noncommercial">NonCommercial</h3>
-          <p>
-            You may not use my work for commercial purpose without my explicit
-            written permission.
-          </p>
-          <h3 id="noderivs">NoDerivs</h3>
-          <p>
-            You may not edit my work without my explicit written permission. Do
-            not crop off the watermark.
-          </p>
-
-          <hr />
-          <figure className="kg-card kg-image-card">
+          <figure className="kg-card kg-image-card kg-width-wide">
             <Img
               fluid={data.smallPic.childImageSharp.fluid}
               className="kg-image"

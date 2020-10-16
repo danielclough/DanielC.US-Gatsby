@@ -75,7 +75,7 @@ const indexQuery = graphql`
             tags
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 1360) {
+                fluid(maxWidth: 2160) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }

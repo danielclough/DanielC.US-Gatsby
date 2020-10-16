@@ -3,6 +3,7 @@
 
 form {
     margin: 0 0 var(--margin) 0;
+    background: #444;
 }
 
 fieldset {
@@ -25,18 +26,15 @@ input[type="email"],
 input[type="tel"],
 input[type="search"],
 input[type="url"],
-select,
-textarea {
+select {
     background: var(--color-bg);
     border-radius: var(--radius);
-    border: none;
     border: solid 1px var(--color-border);
     color: inherit;
     display: block;
     outline: 0;
     padding: 0 0.6em;
     text-decoration: none;
-    width: 100%;
 }
 
 input[type="text"]:invalid,
@@ -93,6 +91,14 @@ select {
 }
 
 textarea {
+    border-radius: var(--radius);
+    border: solid 1px var(--color-border);
+    display: block;
+    outline: 0;
+    margin: 0 auto;
+    padding: 0 0.6em;
+    text-decoration: none;
+    width: 95%;
     padding: 0.3em 0.6em;
     resize: vertical;
 }
@@ -104,6 +110,14 @@ input[type="radio"] {
     opacity: 0;
     width: 1em;
     z-index: -1;
+}
+
+input[type="reset"] {
+    margin-left: 90%;
+}
+
+input[type="submit"]{
+    margin: 1rem;
 }
 
 input[type="checkbox"] + label,
