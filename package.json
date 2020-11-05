@@ -95,7 +95,7 @@
     "typeface-nunito": "^0.0.72",
     "typography": "^0.16.19",
     "url-join": "^4.0.0",
-    "yup": "^0.26.6"
+    "yup": "^0.29.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
