@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../assets/css/main.css';
+import '../assets/css/layout.css';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
