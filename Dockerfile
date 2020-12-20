@@ -3,7 +3,7 @@ FROM node:slim
 WORKDIR /app
 # COPY . .
 
-RUN apt-get update && apt-get -yqq install git && \
+RUN apt-get update && apt-get -yqq install git python3 make gcc && \
 	git clone https://github.com/danielclough/DanielC.US-Gatsby.git && \
 	cd DanielC.US-Gatsby && \
 	npm install -g gatsby-cli  && \
