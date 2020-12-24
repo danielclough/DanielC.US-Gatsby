@@ -21,7 +21,7 @@ import '../assets/css/main.css';
 import Layout from "../components/layout"
 
 
-const IndexPage = () => (
+const ResumePage = () => (
 <>
 <Layout>
   <SEO title="Home" />
@@ -51,6 +51,6 @@ const IndexPage = () => (
 </>
 )
 
-export default IndexPage
+export default ResumePage
 
 

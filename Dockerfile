@@ -1,14 +1,28 @@
-FROM node:slim
+FROM node:slim AS base
 
-WORKDIR /app
-# COPY . .
+WORKDIR /
 
-RUN apt-get update && apt-get -yqq install git python3 make gcc && \
-	git clone https://github.com/danielclough/DanielC.US-Gatsby.git && \
-	cd DanielC.US-Gatsby && \
-	npm install -g gatsby-cli  && \
+RUN apt-get update && apt-get -yqq install git python3 make g++ 
+
+# Build from Github
+FROM base AS clone
+RUN apt-get update && apt-get -yqq install git && \
+	git clone https://github.com/danielclough/DanielC.US-Gatsby.git 
+FROM clone AS build
+WORKDIR DanielC.US-Gatsby  
+COPY .env .env
+RUN npm install -g gatsby-cli  && \
 	npm install
 
-CMD ["gatsby", "develop", "-H", "0.0.0.0" ]
+# Build from Local
+#FROM clone AS build
+#WORKDIR /app
+#COPY . .
+#RUN npm install -g gatsby-cli  && \
+#	npm install && \
+#	gatsby build
 
-EXPOSE 8000
+
+# Development
+CMD ["gatsby", "develop", "-H", "0.0.0.0", "-p", "8101"]
+EXPOSE 8101

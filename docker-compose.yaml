@@ -1,11 +1,10 @@
 version: '3'
 services:
   gatsby:
+    network_mode: host
+    restart: on-failure
     build:
       context: .
       dockerfile: Dockerfile
-    restart: on-failure
     volumes:
       - ./src:/app/src
-    ports:
-      - "8101:8000" # 8=Gatsby; 1=Public; 0=Daniel's; 1=Primary; 
